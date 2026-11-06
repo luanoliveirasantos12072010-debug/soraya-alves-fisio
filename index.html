@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soraya Alves | Fisioterapia do Sono e Cardiorrespiratória em Garanhuns - PE</title>
+<meta name="description" content="Soraya Alves, fisioterapeuta em Garanhuns - PE. Atendimento especializado em apneia do sono, ronco e reabilitação cardiorrespiratória. Agende pelo WhatsApp (81) 9712-3303.">
+<meta property="og:title" content="Soraya Alves · Fisioterapia do Sono">
+<meta property="og:description" content="Respire melhor, durma melhor, viva melhor.">
+<meta property="og:image" content="img/soraya.jpg">
+<meta name="theme-color" content="#3d4a7e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23fbf6f1'/%3E%3Cpath d='M30 14C18 14 12 30 12 42c0 6 4 8 8 6 6-3 10-6 10-14Z' fill='none' stroke='%23e8999b' stroke-width='3.5'/%3E%3Cpath d='M34 14c12 0 18 16 18 28 0 6-4 8-8 6-6-3-10-6-10-14Z' fill='none' stroke='%233f9a8f' stroke-width='3.5'/%3E%3Cpath d='M20 34h7l3-6 4 10 3-4h7' fill='none' stroke='%23d9787b' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physiotherapy","name":"Soraya Alves - Fisioterapia do Sono e Cardiorrespiratória","telephone":"+55 81 9712-3303","address":{"@type":"PostalAddress","addressLocality":"Garanhuns","addressRegion":"PE","addressCountry":"BR"},"description":"Atendimento especializado em apneia do sono, ronco e reabilitação cardiorrespiratória."}
+</script>
+<style>
+/* Do anoitecer ao amanhecer: índigo suave, lavanda, pêssego, rosa e verde-água do logo. Sem preto. */
+:root{
+  --night:#3d4a7e; --night2:#4e5b94; --dusk:#7d7fb8; --lav:#c9c6ec; --lav2:#e6e3f7;
+  --peach:#f7d9c6; --rose:#e8999b; --rose2:#d9787b; --teal:#3f9a8f; --teal2:#2f8579; --mint:#d5ece6;
+  --cream:#fbf6f1; --paper:#fffdfa; --ink:#3a3f63; --mid:#6f7395; --line:rgba(58,63,99,.13);
+  --serif:"Instrument Serif",Georgia,serif; --f:"Outfit",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.2,1); --spring:cubic-bezier(.34,1.5,.64,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+html,body{margin:0}
+body{background:var(--cream);color:var(--ink);font-family:var(--f);font-weight:400;font-size:17px;line-height:1.65}
+body.loading{overflow:hidden}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+::selection{background:var(--lav)}
+.wrap{max-width:1220px;margin:0 auto;padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(44px,6vw,82px);color:var(--night)}
+h3{font-size:30px;color:var(--night)}
+p{margin:0}
+em{font-style:italic;color:var(--rose2)}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--teal2)}
+.tag i{width:8px;height:8px;border-radius:50%;background:currentColor;animation:breath 4s ease-in-out infinite}
+@keyframes breath{50%{transform:scale(1.8);opacity:.5}}
+.pad{padding-block:clamp(90px,11vw,150px)}
+
+/* ===== Abertura 0–100: pulmões respirando + linha de batimento ===== */
+.loader{position:fixed;inset:0;z-index:500;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#55639f,var(--night) 70%);color:var(--cream);transition:opacity .9s var(--ease),visibility .9s}
+.loader.go{opacity:0;visibility:hidden}
+.ld{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;transition:transform .9s var(--ease)}
+.loader.go .ld{transform:scale(1.2)}
+.ld svg{width:min(200px,52vw);overflow:visible}
+.ld .lung{transform-origin:100px 110px;animation:inh 2.6s ease-in-out infinite}
+@keyframes inh{50%{transform:scale(1.06)}}
+.ld .lfill{transition:none}
+.ld .ecg{stroke-dasharray:240;stroke-dashoffset:240}
+.ld .n{font-family:var(--serif);font-size:62px;line-height:1;font-variant-numeric:tabular-nums}
+.ld .n small{font-size:.45em;color:var(--peach)}
+.ld .nm{font-size:13px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;opacity:.85;padding-left:.3em}
+.ld .lp{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--lav);min-height:26px}
+
+/* ===== Topo ===== */
+.nav{position:fixed;inset:0 0 auto;z-index:60;padding-block:18px;color:var(--cream);transition:padding .4s,background .4s,color .4s,box-shadow .4s}
+.nav.solid{padding-block:10px;background:rgba(251,246,241,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .lg{width:46px;height:46px;border-radius:15px;background:var(--paper);display:grid;place-items:center;flex:none;box-shadow:0 8px 20px -10px rgba(30,40,90,.5)}
+.brand .lg svg{width:34px;height:34px}
+.brand b{display:block;font-family:var(--serif);font-weight:400;font-size:25px;line-height:1}
+.brand small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.75;margin-top:3px}
+.links{display:flex;gap:28px;font-size:15px}
+.links a{text-decoration:none;opacity:.9;position:relative}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;border-radius:2px;background:var(--rose);transform:scaleX(0);transition:transform .4s var(--ease)}
+.links a:hover::after{transform:scaleX(1)}
+@media(max-width:1000px){.links{display:none}}
+.btn{--x:0px;--y:0px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 28px;border-radius:999px;border:0;cursor:pointer;font-weight:500;font-size:15.5px;text-decoration:none;white-space:nowrap;transform:translate(var(--x),var(--y));transition:transform .4s var(--ease),background .3s,box-shadow .3s,color .3s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.t{background:var(--teal);color:#fff;box-shadow:0 16px 34px -16px rgba(47,133,121,.9)}
+.btn.t:hover{background:var(--teal2)}
+.btn.r{background:var(--rose);color:#fff;box-shadow:0 16px 34px -16px rgba(217,120,123,.9)}
+.btn.r:hover{background:var(--rose2)}
+.btn.w{background:rgba(255,255,255,.14);color:var(--cream);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.btn.w:hover{background:rgba(255,255,255,.24)}
+.btn.n{background:transparent;color:var(--night);box-shadow:inset 0 0 0 1.5px var(--night)}
+.btn.n:hover{background:var(--night);color:var(--cream)}
+.btn .ar{transition:transform .4s var(--ease)}
+.btn:hover .ar{transform:translateX(5px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outline:2px solid var(--rose2);outline-offset:3px}
+.nav .btn{padding:12px 20px;font-size:14.5px}
+@media(max-width:560px){.nav .btn span{display:none}.nav .btn{padding:12px}.brand small{display:none}}
+
+/* ===== Hero noturno ===== */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;color:var(--cream);background:linear-gradient(180deg,#36427a 0%,#4e5b94 45%,#8a83b9 75%,#e6b9b4 100%);padding-block:130px 120px}
+#stars{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.moon{position:absolute;right:9%;top:14%;width:clamp(80px,9vw,130px);aspect-ratio:1;border-radius:50%;box-shadow:inset -22px 10px 0 0 #f6e7cf;transform:rotate(-20deg) translateY(var(--my,0px));filter:drop-shadow(0 0 30px rgba(246,231,207,.5))}
+.cloud{position:absolute;height:60px;border-radius:999px;background:rgba(255,255,255,.12);filter:blur(4px);pointer-events:none;animation:drift linear infinite}
+.cloud::before,.cloud::after{content:"";position:absolute;border-radius:50%;background:inherit}
+.cloud::before{width:60%;height:140%;left:15%;bottom:20%}
+.cloud::after{width:40%;height:120%;right:12%;bottom:30%}
+@keyframes drift{from{transform:translateX(-30vw)}to{transform:translateX(130vw)}}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,80px);align-items:center}
+.htx{display:flex;flex-direction:column;gap:24px}
+.htx .tag{color:var(--mint)}
+.hero h1{font-size:clamp(50px,6.6vw,98px);line-height:.92}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(30px) scale(.96);filter:blur(10px)}
+.ready .hero h1 .w{animation:wi 1.2s var(--ease) forwards;animation-delay:calc(var(--i)*.09s + .15s)}
+@keyframes wi{to{opacity:1;transform:none;filter:none}}
+.hero h1 em{color:var(--peach)}
+.hero .lead{max-width:48ch;font-size:clamp(17px,1.4vw,19.5px);font-weight:300;opacity:.92}
+.fx{opacity:0;transform:translateY(22px)}
+.ready .fx{animation:fin 1s var(--ease) forwards;animation-delay:var(--d,.6s)}
+@keyframes fin{to{opacity:1;transform:none}}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips span{font-size:14px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22)}
+/* foto respirando */
+.ph{position:relative;justify-self:center;width:min(400px,100%);aspect-ratio:1}
+.ph .ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,.35);animation:ring 6s ease-in-out infinite}
+.ph .ring:nth-child(2){inset:-7%;animation-delay:-2s;opacity:.6}
+.ph .ring:nth-child(3){inset:-14%;animation-delay:-4s;opacity:.35}
+@keyframes ring{50%{transform:scale(1.04);border-color:rgba(247,217,198,.7)}}
+.ph .im{position:absolute;inset:6%;border-radius:50%;overflow:hidden;box-shadow:0 40px 80px -30px rgba(30,30,80,.6);background:var(--lav)}
+.ph .im img{width:100%;height:100%;object-fit:cover;transform:scale(1.26) translateX(3%)}
+.ph .zz{position:absolute;right:2%;top:4%;font-family:var(--serif);font-style:italic;font-size:34px;color:var(--peach)}
+.ph .zz span{position:absolute;opacity:0;animation:zz 4.5s ease-in-out infinite}
+.ph .zz span:nth-child(2){animation-delay:1.5s;font-size:.75em;left:22px;top:-18px}
+.ph .zz span:nth-child(3){animation-delay:3s;font-size:.55em;left:40px;top:-34px}
+@keyframes zz{0%{opacity:0;transform:translateY(10px)}30%{opacity:1}100%{opacity:0;transform:translateY(-26px)}}
+.ph .card{position:absolute;left:-26px;bottom:8%;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:20px;background:rgba(255,253,250,.94);color:var(--ink);box-shadow:0 24px 50px -24px rgba(30,30,80,.6);font-size:14px;line-height:1.3}
+.ph .card svg{width:44px;height:30px;flex:none}
+.ph .card svg path{stroke-dasharray:60 60;animation:ecg 2.4s linear infinite}
+@keyframes ecg{from{stroke-dashoffset:120}to{stroke-dashoffset:0}}
+.ph .card b{display:block;font-weight:500}
+.ph .card small{color:var(--mid)}
+.hz{position:absolute;left:0;right:0;bottom:-1px;height:110px;pointer-events:none}
+@media(max-width:900px){.hgrid{grid-template-columns:1fr}.ph{order:-1;width:min(270px,70vw)}.hero{padding-top:120px}.ph .card{left:-14px}.moon{top:12%;right:5%;width:56px}}
+
+/* ===== Sinais ===== */
+.sig{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.sig .tx{display:flex;flex-direction:column;gap:18px;position:sticky;top:110px}
+.sig .tx p{color:var(--mid);font-weight:300}
+.chk{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chk label{position:relative;display:flex;gap:12px;align-items:flex-start;padding:18px;border-radius:20px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;font-size:15.5px;line-height:1.35;transition:background .35s,box-shadow .35s,transform .4s var(--spring)}
+.chk label:hover{transform:translateY(-3px)}
+.chk input{position:absolute;opacity:0;pointer-events:none}
+.chk .bx{flex:none;width:24px;height:24px;border-radius:8px;box-shadow:inset 0 0 0 1.5px var(--dusk);display:grid;place-items:center;transition:background .3s,box-shadow .3s;margin-top:-1px}
+.chk .bx svg{width:14px;height:14px;stroke:#fff;stroke-width:3;fill:none;stroke-dasharray:20;stroke-dashoffset:20;transition:stroke-dashoffset .35s var(--ease) .05s}
+.chk input:checked+.bx{background:var(--teal);box-shadow:none}
+.chk input:checked+.bx svg{stroke-dashoffset:0}
+.chk label:has(input:checked){background:var(--mint);box-shadow:inset 0 0 0 1px rgba(63,154,143,.4)}
+.chk .e{display:block;font-size:22px;margin-bottom:4px}
+.res{margin-top:16px;border-radius:24px;padding:26px;background:var(--night);color:var(--cream);display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.meter{height:10px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}
+.meter i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--mint),var(--peach),var(--rose));transition:width .7s var(--ease)}
+.res h3{color:var(--cream);font-size:30px}
+.res p{opacity:.85;font-weight:300;font-size:15.5px}
+.res small{opacity:.6;font-size:12.5px}
+@media(max-width:900px){.sig{grid-template-columns:1fr}.sig .tx{position:static}}
+@media(max-width:480px){.chk{grid-template-columns:1fr}}
+
+/* ===== Serviços ===== */
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:52px}
+.sh .l{display:flex;flex-direction:column;gap:18px;max-width:760px}
+.sh p{color:var(--mid);max-width:42ch;font-weight:300}
+.svs{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-auto-rows:minmax(250px,auto);gap:16px}
+.sv{position:relative;border-radius:30px;padding:30px;display:flex;flex-direction:column;gap:12px;overflow:hidden;isolation:isolate;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);transition:transform .6s var(--spring)}
+.sv:hover{transform:translateY(-6px)}
+.sv::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-90px;bottom:-110px;z-index:-1;background:var(--c,var(--lav2));transition:transform .8s var(--ease)}
+.sv:hover::after{transform:scale(1.6)}
+.sv .ic{width:60px;height:60px;border-radius:20px;background:var(--cream);display:grid;place-items:center;color:var(--night)}
+.sv .ic svg{width:32px;height:32px}
+.sv p{color:var(--mid);font-weight:300;font-size:15.5px;max-width:36ch}
+.sv.big{grid-row:span 2;background:linear-gradient(170deg,var(--night),#5c64a0);color:var(--cream);--c:rgba(247,217,198,.18)}
+.sv.big h3{color:var(--cream);font-size:clamp(36px,3.6vw,48px)}
+.sv.big p{color:rgba(251,246,241,.8)}
+.sv.big .ic{background:rgba(255,255,255,.12);color:var(--peach)}
+.sv.big .wave{margin-top:auto;height:90px}
+.sv.big .wave path{stroke-dasharray:6 8;animation:flow 3s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-56}}
+.sv .go{margin-top:auto;font-weight:500;font-size:14.5px;color:var(--teal2);text-decoration:none}
+@media(max-width:980px){.svs{grid-template-columns:1fr 1fr}.sv.big{grid-column:1/-1;grid-row:auto}}
+@media(max-width:600px){.svs{grid-template-columns:1fr}}
+
+/* ===== Respire comigo ===== */
+.br{background:linear-gradient(180deg,var(--cream),var(--lav2) 30%,var(--lav2) 70%,var(--cream));overflow:hidden}
+.brg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.brg .tx{display:flex;flex-direction:column;gap:18px}
+.brg .tx p{color:var(--mid);font-weight:300}
+.pace{display:flex;gap:8px;flex-wrap:wrap}
+.pace button{border:0;cursor:pointer;padding:9px 16px;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;transition:background .3s,color .3s}
+.pace button.on{background:var(--night);color:var(--cream);box-shadow:none}
+.orb{position:relative;justify-self:center;width:min(400px,84vw);aspect-ratio:1;display:grid;place-items:center}
+.orb .halo{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,rgba(213,236,230,.9),rgba(201,198,236,.3) 60%,transparent 70%)}
+.orb .ball{position:absolute;width:46%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--mint) 40%,var(--teal) 100%);box-shadow:0 30px 60px -20px rgba(47,133,121,.6),inset 0 -10px 30px rgba(47,133,121,.3);transform:scale(var(--s,.7));transition:transform var(--t,4s) cubic-bezier(.45,0,.55,1)}
+.orb svg.pg{position:absolute;inset:4%;width:92%;height:92%;transform:rotate(-90deg)}
+.orb svg.pg circle{fill:none;stroke-width:3}
+.orb .tr2{stroke:rgba(61,74,126,.12)}
+.orb .pr2{stroke:var(--rose);stroke-linecap:round;stroke-dasharray:1100;stroke-dashoffset:1100}
+.orb .lbl{position:relative;z-index:2;text-align:center;color:var(--night);pointer-events:none}
+.orb .lbl b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,46px);line-height:1}
+.orb .lbl span{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal2)}
+@media(max-width:900px){.brg{grid-template-columns:1fr}}
+
+/* ===== Sobre ===== */
+.ab{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,6vw,90px);align-items:center}
+.abim{position:relative;justify-self:center;width:min(380px,100%)}
+.abim .bl{aspect-ratio:1;border-radius:46% 54% 42% 58%/55% 45% 55% 45%;overflow:hidden;animation:blob 14s ease-in-out infinite;box-shadow:0 50px 90px -40px rgba(61,74,126,.6)}
+.abim .bl img{width:100%;height:100%;object-fit:cover;transform:scale(1.26) translateX(3%)}
+@keyframes blob{50%{border-radius:58% 42% 55% 45%/42% 58% 42% 58%}}
+.abim .st{position:absolute;right:-12px;top:10%;background:var(--paper);border-radius:18px;padding:12px 16px;box-shadow:0 20px 40px -20px rgba(61,74,126,.5);font-size:14px;line-height:1.3}
+.abim .st b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;color:var(--rose2)}
+.ab .tx{display:flex;flex-direction:column;gap:18px}
+.ab .tx p{color:var(--mid);font-weight:300}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{padding:8px 14px;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px}
+@media(max-width:900px){.ab{grid-template-columns:1fr}}
+
+/* ===== Passos ===== */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s}
+.stp{position:relative;padding:30px;border-radius:28px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:12px;overflow:hidden}
+.stp::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:84px;line-height:.8;color:var(--lav2);position:absolute;right:20px;top:18px;transition:color .5s}
+.stp:hover::before{color:var(--peach)}
+.stp .ic{width:52px;height:52px;border-radius:50%;background:var(--mint);color:var(--teal2);display:grid;place-items:center;position:relative}
+.stp .ic svg{width:26px;height:26px}
+.stp p{color:var(--mid);font-weight:300;font-size:15.5px}
+@media(max-width:900px){.steps{grid-template-columns:1fr}}
+
+/* ===== FAQ ===== */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:start}
+.qa{border-top:1px solid var(--line)}
+.qa:last-child{border-bottom:1px solid var(--line)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;background:none;border:0;cursor:pointer;text-align:left;font-family:var(--serif);font-size:clamp(23px,2.2vw,29px);line-height:1.15;color:var(--night)}
+.qa .pl{flex:none;width:36px;height:36px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--dusk);display:grid;place-items:center;font-family:var(--f);font-size:18px;transition:transform .5s var(--ease),background .3s,color .3s}
+.qa.on .pl{transform:rotate(45deg);background:var(--rose);color:#fff;box-shadow:none}
+.qa .an{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease)}
+.qa.on .an{grid-template-rows:1fr}
+.qa .an>div{overflow:hidden}
+.qa .an p{padding-bottom:22px;color:var(--mid);font-weight:300;max-width:60ch}
+@media(max-width:900px){.faq{grid-template-columns:1fr}}
+
+/* ===== Local ===== */
+.loc{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:32px;overflow:hidden;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line),0 50px 90px -60px rgba(61,74,126,.6)}
+.loc .info{padding:clamp(28px,4vw,50px);display:flex;flex-direction:column;gap:18px;min-width:0}
+.li{display:flex;gap:14px;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.li .ic{flex:none;width:46px;height:46px;border-radius:16px;background:var(--lav2);color:var(--night);display:grid;place-items:center}
+.li small{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal2);font-weight:500}
+.li div{min-width:0;overflow-wrap:anywhere}
+.li a{text-decoration:none}
+.map{position:relative;min-height:500px;background:var(--lav2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:900px){.loc{grid-template-columns:1fr}.map{min-height:360px}}
+
+/* ===== Final: amanhecer ===== */
+.final{position:relative;overflow:hidden;text-align:center;color:var(--night);background:linear-gradient(180deg,var(--cream) 0%,#fbe3d3 45%,#f6c9b5 100%);padding-block:clamp(110px,14vw,180px) clamp(150px,16vw,220px)}
+.final .wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:22px}
+.final h2{font-size:clamp(48px,7.4vw,108px);max-width:12ch}
+.final p{color:var(--mid);max-width:44ch;font-weight:300}
+.sun{position:absolute;left:50%;bottom:-24%;width:min(560px,90vw);aspect-ratio:1;border-radius:50%;transform:translate(-50%,var(--sy,40%));background:radial-gradient(circle,#ffe8c2 0%,#f8c79c 45%,rgba(248,199,156,0) 70%);pointer-events:none}
+footer{background:var(--night);color:rgba(251,246,241,.75);padding-block:30px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{text-decoration:none}
+footer a:hover{color:var(--peach)}
+
+.js .rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.on{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}.js .rv.d3{transition-delay:.3s}
+
+/* ===== Assistente (esquerda) ===== */
+.abt{position:fixed;left:max(18px,env(safe-area-inset-left));bottom:max(18px,env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:12px;border:0;cursor:pointer;padding:7px 20px 7px 7px;border-radius:999px;background:var(--paper);box-shadow:0 0 0 1px var(--line),0 22px 44px -18px rgba(61,74,126,.6);text-align:left;line-height:1.2;transition:transform .4s var(--spring)}
+.abt:hover{transform:translateY(-3px)}
+.abt .av{position:relative;width:46px;height:46px;border-radius:50%;background:var(--night);display:grid;place-items:center;flex:none}
+.abt .av svg{width:28px;height:28px}
+.abt .av::after{content:"";position:absolute;right:0;bottom:0;width:11px;height:11px;border-radius:50%;background:#6fd0a5;border:2px solid var(--paper)}
+.abt b{display:block;font-weight:500;font-size:14.5px}
+.abt small{font-size:12px;color:var(--mid)}
+.as{position:fixed;left:max(14px,env(safe-area-inset-left));bottom:calc(max(18px,env(safe-area-inset-bottom)) + 74px);z-index:91;width:min(400px,calc(100vw - 28px));max-height:min(640px,calc(100svh - 120px));display:flex;flex-direction:column;border-radius:26px;background:var(--paper);overflow:hidden;box-shadow:0 0 0 1px var(--line),0 50px 90px -30px rgba(61,74,126,.6);transform-origin:bottom left;animation:apop .5s var(--spring)}
+@keyframes apop{from{opacity:0;transform:scale(.86) translateY(16px)}}
+.as header{display:flex;align-items:center;gap:12px;padding:16px;background:linear-gradient(120deg,var(--night),var(--night2));color:var(--cream)}
+.as header .av{width:42px;height:42px;border-radius:14px;background:var(--paper);display:grid;place-items:center}
+.as header .av svg{width:30px;height:30px}
+.as header b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.1}
+.as header small{display:flex;align-items:center;gap:6px;font-size:12.5px;opacity:.85}
+.as header small::before{content:"";width:7px;height:7px;border-radius:50%;background:#8fe0bd}
+.as header button{margin-left:auto;width:34px;height:34px;border-radius:50%;border:0;cursor:pointer;background:rgba(255,255,255,.15);color:var(--cream);font-size:18px}
+.msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--cream);font-size:15px;line-height:1.55}
+.m{max-width:88%;padding:11px 15px;border-radius:20px;opacity:0;transform:translateY(8px);animation:fin .4s var(--ease) forwards}
+.m.b{background:var(--paper);border-bottom-left-radius:6px;box-shadow:0 0 0 1px var(--line)}
+.m.u{background:var(--night);color:var(--cream);align-self:flex-end;border-bottom-right-radius:6px}
+.m a{color:var(--teal2);font-weight:500}
+.m b{font-weight:600;color:var(--night)}
+.typing{display:flex;gap:5px;padding:15px 16px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--rose);animation:dt 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dt{50%{transform:translateY(-5px);opacity:.4}}
+.qk{display:flex;gap:7px;padding:10px 12px;overflow-x:auto;border-top:1px solid var(--line);scrollbar-width:none;background:var(--paper)}
+.qk::-webkit-scrollbar{display:none}
+.qk button{flex:none;border:0;cursor:pointer;padding:8px 13px;border-radius:999px;background:var(--lav2);font-size:13.5px;transition:background .25s}
+.qk button:hover{background:var(--mint)}
+.as form{display:flex;gap:8px;padding:12px;background:var(--paper)}
+.as input{flex:1;min-width:0;border:0;border-radius:999px;padding:12px 16px;background:var(--cream);box-shadow:inset 0 0 0 1px var(--line);font-size:15px}
+.as form button{width:46px;height:46px;border-radius:50%;border:0;background:var(--teal);color:#fff;cursor:pointer;display:grid;place-items:center;flex:none}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js .rv,.fx,.hero h1 .w{opacity:1;transform:none;filter:none}}
+</style>
+</head>
+<body class="loading">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="logo" viewBox="0 0 64 64"><path d="M30 13C18 13 11 29 11 41c0 7 4 9 9 7 6-3 10-6 10-14Z" fill="none" stroke="#e8999b" stroke-width="3.4" stroke-linecap="round"/><path d="M34 13c12 0 19 16 19 28 0 7-4 9-9 7-6-3-10-6-10-14Z" fill="none" stroke="#3f9a8f" stroke-width="3.4" stroke-linecap="round"/><path d="M32 8v14" stroke="#3f9a8f" stroke-width="3" stroke-linecap="round"/><path d="M18 34h8l3-6 4 11 3-5h9" fill="none" stroke="#d9787b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2Z"/></symbol>
+</defs></svg>
+
+<!-- ABERTURA 0-100 -->
+<div class="loader" id="loader" aria-hidden="true"><div class="ld">
+  <svg viewBox="0 0 200 200">
+    <defs><clipPath id="lc"><rect id="lrect" x="0" y="200" width="200" height="200"/></clipPath></defs>
+    <g class="lung">
+      <path d="M92 36C56 36 34 86 34 124c0 22 13 28 28 22 19-9 30-19 30-44Z" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.35)" stroke-width="3"/>
+      <path d="M108 36c36 0 58 50 58 88 0 22-13 28-28 22-19-9-30-19-30-44Z" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.35)" stroke-width="3"/>
+      <g clip-path="url(#lc)"><path d="M92 36C56 36 34 86 34 124c0 22 13 28 28 22 19-9 30-19 30-44Z" fill="#e8999b"/><path d="M108 36c36 0 58 50 58 88 0 22-13 28-28 22-19-9-30-19-30-44Z" fill="#5fb3a7"/></g>
+      <path d="M100 20v40" stroke="#d5ece6" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <path class="ecg" id="ecg" d="M20 104h44l10-20 14 40 10-30 8 10h74" fill="none" stroke="#fbf6f1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <div class="n"><span id="ldN">0</span><small>%</small></div>
+  <div class="lp" id="ldP">inspire…</div>
+  <div class="nm">Soraya Alves · Fisioterapia</div>
+</div></div>
+
+<nav class="nav" id="nav"><div class="wrap">
+  <a class="brand" href="#inicio" aria-label="Soraya Alves Fisioterapia, início"><span class="lg"><svg><use href="#logo"/></svg></span><span><b>Soraya Alves</b><small>Fisioterapia do Sono</small></span></a>
+  <div class="links"><a href="#sinais">Sinais</a><a href="#servicos">Tratamentos</a><a href="#respire">Respire</a><a href="#sobre">Sobre</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></div>
+  <a class="btn r wa" href="#" data-msg="Olá, Soraya! Vim pelo site e gostaria de agendar uma avaliação."><svg><use href="#i-wa"/></svg><span>Agendar</span></a>
+</div></nav>
+
+<header class="hero" id="inicio">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <span class="moon" id="moon" aria-hidden="true"></span>
+  <span class="cloud" style="top:30%;width:220px;animation-duration:70s;animation-delay:-20s" aria-hidden="true"></span>
+  <span class="cloud" style="top:62%;width:300px;animation-duration:95s;animation-delay:-60s;opacity:.7" aria-hidden="true"></span>
+  <div class="wrap hgrid">
+    <div class="htx">
+      <span class="tag fx" style="--d:.1s"><i></i>Fisioterapia do Sono · Cardiorrespiratória</span>
+      <h1 id="h1">Respire melhor. Durma melhor. <em>Viva melhor.</em></h1>
+      <p class="lead fx" style="--d:.8s">Atendimento especializado em apneia do sono, ronco e reabilitação cardiorrespiratória em Garanhuns. Avaliação individualizada e acompanhamento feito para a sua respiração, o seu sono e a sua qualidade de vida.</p>
+      <div class="cta fx" style="--d:.95s"><a class="btn r wa" href="#" data-msg="Olá, Soraya! Vim pelo site e gostaria de agendar uma avaliação."><svg><use href="#i-wa"/></svg>Agendar avaliação <span class="ar">→</span></a><a class="btn w" href="#sinais">Faça o teste rápido</a></div>
+      <div class="chips fx" style="--d:1.1s"><span>Apneia do sono</span><span>Ronco</span><span>Reabilitação cardiorrespiratória</span></div>
+    </div>
+    <div class="ph fx" style="--d:.4s">
+      <span class="ring"></span><span class="ring"></span><span class="ring"></span>
+      <div class="im"><img src="img/soraya.jpg" alt="Soraya Alves, fisioterapeuta do sono" fetchpriority="high"></div>
+      <span class="zz" aria-hidden="true"><span>z</span><span>z</span><span>z</span></span>
+      <div class="card"><svg viewBox="0 0 44 30"><path d="M0 16h10l4-9 6 16 5-12 3 5h16" fill="none" stroke="#d9787b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Avaliação individualizada</b><small>somente com hora marcada</small></span></div>
+    </div>
+  </div>
+  <svg class="hz" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70C240 20 480 100 720 60S1200 10 1440 50V110H0Z" fill="#fbf6f1"/></svg>
+</header>
+
+<section class="pad" id="sinais"><div class="wrap sig">
+  <div class="tx">
+    <span class="tag rv"><i></i>Teste rápido</span>
+    <h2 class="rv d1">Seu sono está te <em>pedindo ajuda?</em></h2>
+    <p class="rv d2">Marque o que acontece com você (ou com quem dorme ao seu lado). Muitos sinais de distúrbios do sono passam despercebidos por anos.</p>
+    <div class="res rv d3" id="res" aria-live="polite">
+      <div class="meter"><i id="mt"></i></div>
+      <h3 id="rT">Marque os sinais ao lado</h3>
+      <p id="rD">O resultado aparece aqui na hora.</p>
+      <a class="btn r" id="rB" href="#" target="_blank" rel="noopener">Enviar resultado para a Soraya <span class="ar">→</span></a>
+      <small>Este teste não é diagnóstico. Somente a avaliação profissional identifica a causa.</small>
+    </div>
+  </div>
+  <div class="chk rv d1" id="chk"></div>
+</div></section>
+
+<section class="pad" id="servicos" style="padding-top:0"><div class="wrap">
+  <div class="sh"><div class="l"><span class="tag rv"><i></i>Tratamentos</span><h2 class="rv d1">Cuidado para noites <em>tranquilas</em> e dias com fôlego.</h2></div><p class="rv d2">Cada tratamento começa com uma avaliação individualizada e segue com acompanhamento próximo e personalizado.</p></div>
+  <div class="svs">
+    <article class="sv big rv"><span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 5a11 11 0 1 0 5 16A9 9 0 0 1 22 5Z"/><path d="M21 11h4l-4 5h4"/></svg></span><h3>Apneia do sono</h3><p>As pausas na respiração durante o sono afetam o descanso, a disposição e a saúde. A fisioterapia atua com avaliação, exercícios e acompanhamento para melhorar a respiração durante a noite.</p>
+      <svg class="wave" viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 45C30 15 50 15 75 45S120 75 150 45 195 15 225 45 270 75 300 45" fill="none" stroke="#f7d9c6" stroke-width="2.5"/><path d="M0 55C30 35 50 35 75 55S120 75 150 55 195 35 225 55 270 75 300 55" fill="none" stroke="rgba(213,236,230,.5)" stroke-width="2"/></svg>
+      <a class="btn r wa" style="align-self:flex-start" href="#" data-msg="Olá, Soraya! Gostaria de saber sobre o tratamento para apneia do sono.">Falar sobre apneia <span class="ar">→</span></a></article>
+    <article class="sv rv d1" style="--c:var(--peach)"><span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 18c3-3 5-3 8 0s5 3 8 0 5-3 8 0"/><path d="M5 24c3-3 5-3 8 0s5 3 8 0 5-3 8 0"/><path d="M10 8h5l-5 5h5"/></svg></span><h3>Ronco</h3><p>O ronco atrapalha o seu sono e o de quem está ao lado. Entender a causa é o primeiro passo para noites mais silenciosas.</p><a class="go wa" href="#" data-msg="Olá, Soraya! Gostaria de ajuda com ronco.">Quero dormir em silêncio →</a></article>
+    <article class="sv rv d2" style="--c:var(--mint)"><span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 27S4 20 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 15-12 15Z"/><path d="M7 15h5l2-4 3 7 2-3h6"/></svg></span><h3>Reabilitação cardiorrespiratória</h3><p>Recupere o fôlego e a disposição com exercícios orientados e seguros, respeitando o seu ritmo.</p><a class="go wa" href="#" data-msg="Olá, Soraya! Tenho interesse em reabilitação cardiorrespiratória.">Recuperar o fôlego →</a></article>
+    <article class="sv rv d1" style="--c:var(--lav2)"><span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="5" width="18" height="23" rx="3"/><path d="M12 5V3h8v2M11 13h10M11 18h10M11 23h6"/></svg></span><h3>Avaliação individualizada</h3><p>Uma escuta atenta da sua rotina, do seu sono e da sua respiração para montar o plano certo.</p><a class="go wa" href="#" data-msg="Olá, Soraya! Gostaria de agendar uma avaliação individualizada.">Agendar avaliação →</a></article>
+    <article class="sv rv d2" style="--c:#fbe0df"><span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 22l7-7 5 5 12-12"/><path d="M21 8h7v7"/></svg></span><h3>Acompanhamento</h3><p>Acompanhamento personalizado, sessão a sessão, para você sentir a evolução no sono e no dia a dia.</p><a class="go wa" href="#" data-msg="Olá, Soraya! Gostaria de saber como funciona o acompanhamento.">Como funciona →</a></article>
+  </div>
+</div></section>
+
+<section class="br pad" id="respire"><div class="wrap brg">
+  <div class="tx">
+    <span class="tag rv"><i></i>Respire comigo</span>
+    <h2 class="rv d1">Um minuto para <em>desacelerar.</em></h2>
+    <p class="rv d2">Experimente agora um exercício de respiração guiada. Siga a esfera: inspire quando ela cresce, segure, e solte o ar devagar quando ela diminui.</p>
+    <div class="pace rv d2" id="pace"><button class="on" data-p="4,4,6">Relaxar · 4-4-6</button><button data-p="4,7,8">Para dormir · 4-7-8</button><button data-p="4,4,4">Equilíbrio · 4-4-4</button></div>
+    <div class="cta rv d3"><button class="btn t" id="bGo" type="button">Começar <span class="ar">→</span></button><a class="btn n wa" href="#" data-msg="Olá, Soraya! Fiz o exercício de respiração do site e quero saber mais sobre o tratamento.">Quero aprender mais</a></div>
+    <p class="rv d3" style="font-size:13px;opacity:.75">Se sentir tontura ou desconforto, pare e respire normalmente.</p>
+  </div>
+  <div class="orb rv d1" aria-live="polite">
+    <span class="halo"></span>
+    <svg class="pg" viewBox="0 0 360 360"><circle class="tr2" cx="180" cy="180" r="175"/><circle class="pr2" id="pg" cx="180" cy="180" r="175"/></svg>
+    <span class="ball" id="ball"></span>
+    <div class="lbl"><b id="bF">Pronto?</b><span id="bS">toque em começar</span></div>
+  </div>
+</div></section>
+
+<section class="pad" id="sobre"><div class="wrap ab">
+  <div class="abim rv"><div class="bl"><img src="img/soraya.jpg" alt="Retrato de Soraya Alves" loading="lazy"></div><div class="st"><b>Sono &amp; fôlego</b>cuidado especializado</div></div>
+  <div class="tx">
+    <span class="tag rv"><i></i>Quem cuida de você</span>
+    <h2 class="rv d1">Olá, eu sou a <em>Soraya.</em></h2>
+    <p class="rv d2">Sou fisioterapeuta e me dedico à <b>fisioterapia do sono</b> e à <b>fisioterapia cardiorrespiratória</b> em Garanhuns. Meu trabalho é ajudar você a respirar melhor, dormir melhor e recuperar a disposição para viver o seu dia.</p>
+    <p class="rv d2">Cada atendimento começa com uma avaliação individualizada, porque o sono e a respiração de cada pessoa contam uma história diferente. A partir dela, monto um acompanhamento personalizado e caminho junto com você.</p>
+    <div class="pills rv d3"><span>💙 Atendimento humanizado</span><span>🌙 Fisioterapia do sono</span><span>🫁 Cardiorrespiratória</span><span>📅 Hora marcada</span></div>
+  </div>
+</div></section>
+
+<section class="pad" style="padding-top:0"><div class="wrap">
+  <div class="sh"><div class="l"><span class="tag rv"><i></i>Como funciona</span><h2 class="rv d1">Três passos até <em>noites melhores.</em></h2></div></div>
+  <div class="steps">
+    <div class="stp rv"><span class="ic"><svg><use href="#i-wa"/></svg></span><h3>Agende</h3><p>Chame no WhatsApp e escolha o melhor horário. O atendimento é somente com hora marcada.</p></div>
+    <div class="stp rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></span><h3>Avaliação</h3><p>Uma avaliação individualizada da sua respiração, do seu sono e da sua rotina.</p></div>
+    <div class="stp rv d2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></span><h3>Acompanhamento</h3><p>Plano personalizado e acompanhamento próximo para você sentir a diferença.</p></div>
+  </div>
+</div></section>
+
+<section class="pad" id="duvidas" style="padding-top:0"><div class="wrap faq">
+  <div class="sh" style="margin:0"><div class="l"><span class="tag rv"><i></i>Dúvidas</span><h2 class="rv d1">Perguntas <em>frequentes.</em></h2><p class="rv d2">Ficou alguma dúvida? Pergunte à assistente virtual ou fale direto com a Soraya.</p></div></div>
+  <div class="rv d1" id="faq">
+    <div class="qa on"><button aria-expanded="true">O que é fisioterapia do sono?<span class="pl">+</span></button><div class="an"><div><p>É a área da fisioterapia que cuida da respiração durante o sono, atuando em casos como ronco e apneia, com avaliação, exercícios e acompanhamento.</p></div></div></div>
+    <div class="qa"><button aria-expanded="false">Ronco é normal?<span class="pl">+</span></button><div class="an"><div><p>Ronco frequente não deve ser ignorado. Ele pode atrapalhar o descanso e, às vezes, vem acompanhado de pausas na respiração. Vale a pena investigar.</p></div></div></div>
+    <div class="qa"><button aria-expanded="false">Quem pode fazer reabilitação cardiorrespiratória?<span class="pl">+</span></button><div class="an"><div><p>Pessoas que sentem falta de ar, cansaço aos esforços ou que estão se recuperando de problemas respiratórios ou cardíacos, sempre após avaliação.</p></div></div></div>
+    <div class="qa"><button aria-expanded="false">Preciso de encaminhamento?<span class="pl">+</span></button><div class="an"><div><p>Se você tiver exames do sono ou relatórios médicos, leve na avaliação. Para tirar dúvidas sobre o seu caso, fale com a Soraya pelo WhatsApp.</p></div></div></div>
+    <div class="qa"><button aria-expanded="false">Como agendar?<span class="pl">+</span></button><div class="an"><div><p>Os agendamentos e as informações são feitos pelo WhatsApp (81) 9712-3303. O atendimento é somente com hora marcada.</p></div></div></div>
+  </div>
+</div></section>
+
+<section id="contato" style="padding-bottom:clamp(80px,10vw,130px)"><div class="wrap">
+  <div class="sh"><div class="l"><span class="tag rv"><i></i>Contato</span><h2 class="rv d1">Atendimento em <em>Garanhuns.</em></h2></div><p class="rv d2">Agendamentos e informações pelo WhatsApp. O endereço do atendimento é confirmado na hora do agendamento.</p></div>
+  <div class="loc rv">
+    <div class="info">
+      <div class="li"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>Local</small>Garanhuns - PE, Brasil</div></div>
+      <div class="li"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Horário</small>Somente com hora marcada</div></div>
+      <div class="li" style="border:0;padding:0"><span class="ic"><svg width="22" height="22"><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><a class="wa" href="#" data-msg="Olá, Soraya! Vim pelo site.">(81) 9712-3303</a></div></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px"><a class="btn r wa" href="#" data-msg="Olá, Soraya! Gostaria de agendar uma avaliação. Qual o endereço do atendimento?"><svg><use href="#i-wa"/></svg>Agendar e pedir endereço</a><a class="btn n" href="https://www.google.com/maps/dir/?api=1&destination=Garanhuns+-+PE" target="_blank" rel="noopener">Como chegar <span class="ar">→</span></a></div>
+    </div>
+    <div class="map"><iframe title="Mapa de Garanhuns - PE" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Garanhuns+-+PE&z=13&output=embed"></iframe></div>
+  </div>
+</div></section>
+
+<section class="final" id="final">
+  <span class="sun" id="sun" aria-hidden="true"></span>
+  <div class="wrap">
+    <span class="tag rv"><i></i>Bom dia de verdade</span>
+    <h2 class="rv d1">Acorde <em>descansado</em> outra vez.</h2>
+    <p class="rv d2">O primeiro passo para noites melhores é uma conversa. Agende sua avaliação pelo WhatsApp.</p>
+    <a class="btn r wa rv d3" href="#" data-msg="Olá, Soraya! Vim pelo site e quero agendar minha avaliação."><svg><use href="#i-wa"/></svg>Agendar pelo WhatsApp <span class="ar">→</span></a>
+  </div>
+</section>
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Soraya Alves · Fisioterapia do Sono e Cardiorrespiratória · Garanhuns - PE</span><a class="wa" href="#" data-msg="Olá, Soraya! Vim pelo site.">(81) 9712-3303</a></div></footer>
+
+<button class="abt" id="ab" aria-expanded="false" aria-controls="as"><span class="av"><svg viewBox="0 0 24 24" fill="none" stroke="#f7d9c6" stroke-width="1.8"><path d="M20 13.5A8 8 0 1 1 10.5 4a6.5 6.5 0 0 0 9.5 9.5Z"/></svg></span><span><b>Assistente da Soraya</b><small>Dúvidas sobre sono e respiração</small></span></button>
+<div class="as" id="as" hidden role="dialog" aria-label="Assistente virtual">
+  <header><span class="av"><svg><use href="#logo"/></svg></span><div><b>Assistente da Soraya</b><small>Online agora</small></div><button id="asX" aria-label="Fechar">×</button></header>
+  <div class="msgs" id="msgs" aria-live="polite"></div>
+  <div class="qk" id="qk"></div>
+  <form id="asF"><input id="asI" placeholder="Escreva sua dúvida…" autocomplete="off" aria-label="Sua pergunta" maxlength="200"><button aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5 21 12 3 3.5v6.6l12 1.9-12 1.9Z"/></svg></button></form>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+const WA='558197123303', wa=m=>'https://wa.me/'+WA+'?text='+encodeURIComponent(m);
+const bindWA=r=>r.querySelectorAll('.wa').forEach(a=>{a.href=wa(a.dataset.msg||'Olá, Soraya! Vim pelo site.');a.target='_blank';a.rel='noopener'});
+bindWA(document);document.getElementById('yr').textContent=new Date().getFullYear();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, fine=matchMedia('(hover:hover)').matches;
+
+// título palavra por palavra
+(function(){const h=document.getElementById('h1');let i=0;const sp=(n,em)=>{const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(t=>{if(!t.trim()){f.appendChild(document.createTextNode(t));return}const s=document.createElement(em?'em':'span');s.className='w';s.textContent=t;s.style.setProperty('--i',i++);f.appendChild(s)});return f};[...h.childNodes].forEach(n=>n.replaceWith(sp(n,n.nodeType===1)))})();
+
+// abertura: os pulmões se enchem, a linha do batimento se desenha
+(function(){const L=document.getElementById('loader'),N=document.getElementById('ldN'),R=document.getElementById('lrect'),E=document.getElementById('ecg'),P=document.getElementById('ldP');const dur=reduce?200:2800,t0=performance.now();let fin=false;
+  function f(t){const p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,2.4),v=Math.round(e*100);N.textContent=v;R.setAttribute('y',200-e*175);E.style.strokeDashoffset=240*(1-e);P.textContent=v<40?'inspire…':v<75?'segure…':v<100?'solte o ar…':'bem-vindo(a)';if(p<1)requestAnimationFrame(f);else setTimeout(done,450)}
+  function done(){if(fin)return;fin=true;L.classList.add('go');document.body.classList.remove('loading');document.body.classList.add('ready');setTimeout(()=>L.remove(),1000)}
+  requestAnimationFrame(f);setTimeout(done,5800)})();
+
+// estrelas
+(function(){const c=document.getElementById('stars'),x=c.getContext('2d');let S=[],W,H;const dpr=Math.min(2,devicePixelRatio||1);
+  function size(){W=c.clientWidth;H=c.clientHeight;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);S=Array.from({length:Math.round(W*H/5200)},()=>({x:Math.random()*W,y:Math.random()*H*.7,r:Math.random()*1.4+.3,p:Math.random()*6.28,s:.5+Math.random()*1.5}))}
+  let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(c);
+  function draw(t){if(vis){x.clearRect(0,0,W,H);S.forEach(s=>{const a=reduce?.7:.35+.65*Math.abs(Math.sin(s.p+t/1000*s.s*.6));x.globalAlpha=a*(1-s.y/(H*.8));x.fillStyle='#fffaf0';x.beginPath();x.arc(s.x,s.y,s.r,0,6.29);x.fill()})}if(!reduce)requestAnimationFrame(draw)}
+  size();addEventListener('resize',size);requestAnimationFrame(draw)})();
+
+// rolagem: topo, lua desce, sol nasce no final
+const nav=document.getElementById('nav'),moon=document.getElementById('moon'),sun=document.getElementById('sun'),fin2=document.getElementById('final');
+function onScroll(){const y=scrollY;nav.classList.toggle('solid',y>innerHeight*.75);if(reduce)return;if(y<innerHeight)moon.style.setProperty('--my',(y*.35)+'px');const r=fin2.getBoundingClientRect();if(r.top<innerHeight){const p=Math.min(1,Math.max(0,(innerHeight-r.top)/(r.height+innerHeight*.2)));sun.style.setProperty('--sy',(40-p*45)+'%')}}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+
+// teste de sinais
+(function(){const S=[['😮‍💨','Ronco alto ou frequente'],['⏸️','Alguém já notou pausas na sua respiração'],['😴','Acorda cansado, mesmo dormindo a noite toda'],['🥱','Sonolência durante o dia'],['💧','Boca seca ao acordar'],['🤕','Dor de cabeça pela manhã'],['🚽','Acorda várias vezes à noite'],['🫁','Falta de ar ou cansaço aos esforços']];
+  const box=document.getElementById('chk');box.innerHTML=S.map((s,i)=>'<label><input type="checkbox" value="'+s[1]+'"><span class="bx"><svg viewBox="0 0 16 16"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><span><span class="e">'+s[0]+'</span>'+s[1]+'</span></label>').join('');
+  const ins=[...box.querySelectorAll('input')],mt=document.getElementById('mt'),T=document.getElementById('rT'),D=document.getElementById('rD'),B=document.getElementById('rB');
+  function upd(){const sel=ins.filter(i=>i.checked).map(i=>i.value),n=sel.length;mt.style.width=(n/S.length*100)+'%';
+    if(!n){T.textContent='Marque os sinais ao lado';D.textContent='O resultado aparece aqui na hora.'}
+    else if(n<=2){T.innerHTML='Fique de olho 👀';D.textContent='Você marcou '+n+' sinal'+(n>1?'is':'')+'. Se isso se repete com frequência, vale conversar com uma profissional.'}
+    else if(n<=4){T.innerHTML='Vale uma avaliação 💙';D.textContent='Você marcou '+n+' sinais. Esses sinais podem estar ligados à qualidade do seu sono e da sua respiração.'}
+    else{T.innerHTML='Seu sono pede atenção 🌙';D.textContent='Você marcou '+n+' sinais. Uma avaliação individualizada pode ajudar a entender o que está acontecendo.'}
+    B.href=wa('Olá, Soraya! Fiz o teste rápido do site'+(n?' e marquei '+n+' sinal(is):\n• '+sel.join('\n• '):'')+'\nGostaria de agendar uma avaliação.')}
+  ins.forEach(i=>i.addEventListener('change',upd));upd()})();
+
+// respire comigo
+(function(){const ball=document.getElementById('ball'),F=document.getElementById('bF'),Sb=document.getElementById('bS'),pg=document.getElementById('pg'),go=document.getElementById('bGo');let pat=[4,4,6],run=false,tm=[],cycles=0;const C=2*Math.PI*175;pg.style.strokeDasharray=C;pg.style.strokeDashoffset=C;
+  document.querySelectorAll('#pace button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#pace button').forEach(x=>x.classList.toggle('on',x===b));pat=b.dataset.p.split(',').map(Number);if(run){stop();start()}});
+  const clr=()=>{tm.forEach(clearTimeout);tm=[]};
+  function count(n,el){for(let k=0;k<n;k++)tm.push(setTimeout(()=>el.textContent=(n-k)+'s',k*1000))}
+  function phase(name,sec,scale,next){F.textContent=name;ball.style.setProperty('--t',sec+'s');ball.style.setProperty('--s',scale);count(sec,Sb);tm.push(setTimeout(next,sec*1000))}
+  function cycle(){const tot=pat[0]+pat[1]+pat[2];pg.style.transition='none';pg.style.strokeDashoffset=C;void pg.getBoundingClientRect();pg.style.transition='stroke-dashoffset '+tot+'s linear';pg.style.strokeDashoffset=0;
+    phase('Inspire',pat[0],1.25,()=>phase('Segure',pat[1],1.25,()=>phase('Solte o ar',pat[2],.7,()=>{cycles++;if(cycles<6&&run)cycle();else{stop();F.textContent='Muito bem 💙';Sb.textContent='como você se sente?'}})))}
+  function start(){run=true;cycles=0;go.innerHTML='Parar';cycle()}
+  function stop(){run=false;clr();go.innerHTML='Começar <span class="ar">→</span>';ball.style.setProperty('--t','1.2s');ball.style.setProperty('--s',.7);pg.style.transition='stroke-dashoffset .6s';pg.style.strokeDashoffset=C;F.textContent='Pronto?';Sb.textContent='toque em começar'}
+  go.onclick=()=>run?stop():start();
+  // respiração "ociosa" antes de começar
+  let idle=0;setInterval(()=>{if(!run&&!reduce){idle^=1;ball.style.setProperty('--t','4s');ball.style.setProperty('--s',idle?.82:.7)}},4000)})();
+
+// FAQ
+(function(){const it=[...document.querySelectorAll('.qa')];it.forEach(q=>q.querySelector('button').onclick=()=>{const o=!q.classList.contains('on');it.forEach(x=>{x.classList.remove('on');x.querySelector('button').setAttribute('aria-expanded','false')});if(o){q.classList.add('on');q.querySelector('button').setAttribute('aria-expanded','true')}})})();
+
+// magnético
+if(fine&&!reduce)document.querySelectorAll('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.setProperty('--x',(e.clientX-r.left-r.width/2)*.12+'px');b.style.setProperty('--y',(e.clientY-r.top-r.height/2)*.22+'px')});b.addEventListener('pointerleave',()=>{b.style.setProperty('--x','0px');b.style.setProperty('--y','0px')})});
+
+// assistente virtual
+(function(){const norm=t=>t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ');
+  const lev=(a,b)=>{const m=[];for(let i=0;i<=a.length;i++){m[i]=[i];for(let j=1;j<=b.length;j++)m[i][j]=i?Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]===b[j-1]?0:1)):j}return m[a.length][b.length]};
+  const KB=[
+   {q:'Como agendar?',k:['agendar','agenda','marcar','consulta','avaliacao','atendimento'],a:'Os agendamentos são feitos pelo <b>WhatsApp (81) 9712-3303</b>. O atendimento é <b>somente com hora marcada</b>.',w:'Olá, Soraya! Gostaria de agendar uma avaliação.'},
+   {q:'O que é apneia?',k:['apneia','apnea','para de respirar','pausa','pausas','engasg','sufoc'],a:'A <b>apneia do sono</b> acontece quando a respiração faz pausas durante o sono. Isso prejudica o descanso e a disposição. A Soraya faz avaliação e acompanhamento especializado.',w:'Olá, Soraya! Gostaria de saber sobre o tratamento para apneia do sono.'},
+   {q:'Ronco tem tratamento?',k:['ronco','ronca','roncar','roncando','barulho dormindo'],a:'O ronco frequente merece atenção. A fisioterapia do sono avalia o seu caso e indica o acompanhamento adequado para noites mais tranquilas.',w:'Olá, Soraya! Gostaria de ajuda com ronco.'},
+   {q:'Falta de ar',k:['falta de ar','folego','cansaco','canso','respirar','respiracao','pulmao','pulmonar','cardio','coracao','covid','dpoc','asma','bronquite','reabilita'],a:'A <b>reabilitação cardiorrespiratória</b> ajuda a recuperar o fôlego e a disposição com exercícios orientados e seguros, sempre após avaliação.',w:'Olá, Soraya! Tenho interesse em reabilitação cardiorrespiratória.'},
+   {q:'Durmo mal',k:['durmo mal','insonia','nao durmo','sono ruim','acordo cansad','sonolencia','sono','dormir','acordo'],a:'Dormir mal afeta tudo no dia. Faça o <a href="#sinais">teste rápido do site</a> e, se marcar alguns sinais, vale uma avaliação com a Soraya.',w:'Olá, Soraya! Tenho dormido mal e gostaria de uma avaliação.'},
+   {q:'Onde atende?',k:['onde','endereco','local','fica','cidade','garanhuns','bairro'],a:'O atendimento é em <b>Garanhuns - PE</b>. O endereço é confirmado na hora do agendamento pelo WhatsApp.',w:'Olá, Soraya! Qual o endereço do atendimento?'},
+   {q:'Valores',k:['valor','preco','quanto','custa','pagamento','pix','cartao','plano','convenio','pacote'],a:'Os valores e as formas de pagamento são informados pelo <b>WhatsApp</b>, de acordo com o tipo de atendimento.',w:'Olá, Soraya! Gostaria de saber os valores do atendimento.'},
+   {q:'Horário',k:['horario','hora','abre','funciona','sabado','domingo','que dia'],a:'O atendimento é <b>somente com hora marcada</b>. Combine o melhor horário pelo WhatsApp.',w:'Olá, Soraya! Qual horário você tem disponível?'},
+   {q:'CPAP',k:['cpap','aparelho','mascara','bipap'],a:'Dúvidas sobre o uso de aparelhos para dormir são bem comuns. A Soraya pode te orientar na avaliação.',w:'Olá, Soraya! Tenho dúvidas sobre aparelho para dormir (CPAP).'},
+   {q:'Exercício de respiração',k:['exercicio','relaxar','ansiedade','estresse','calma','respire'],a:'Experimente o <a href="#respire">exercício de respiração guiada</a> aqui no site. É só seguir a esfera. 🌙'}];
+  const SM=[{k:['oi','ola','bom dia','boa tarde','boa noite','opa','eae'],a:'Olá! 🌙 Posso te ajudar com dúvidas sobre ronco, apneia, falta de ar, agendamento e valores.'},{k:['obrigad','valeu','brigad'],a:'Por nada! Que você tenha noites tranquilas. 💙'}];
+  const msgs=document.getElementById('msgs'),qk=document.getElementById('qk'),as=document.getElementById('as'),ab=document.getElementById('ab');
+  const add=(h,c)=>{const d=document.createElement('div');d.className='m '+c;d.innerHTML=h;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;d.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=()=>{if(innerWidth<700)toggle(false)})};
+  function score(e,n){const ws=n.split(/\s+/).filter(w=>w.length>=4);let s=0;e.k.forEach(k=>{if(n.includes(k))s+=2;else if(k.length>=4&&!k.includes(' ')&&ws.some(w=>lev(w,k)<=1||(k.length>=6&&lev(w.slice(0,k.length),k)<=1)))s+=1});return s}
+  function reply(t){const n=' '+norm(t)+' ';const ex=KB.find(e=>e.q===t);if(ex)return ex;if(n.trim().length<16){const g=SM.find(e=>e.k.some(k=>n.includes(' '+k)));if(g)return g}let best=null,sc=0;KB.forEach(e=>{const s=score(e,n);if(s>sc){sc=s;best=e}});if(best)return best;return SM.find(e=>e.k.some(k=>n.includes(' '+k)))||null}
+  function ask(t){add(t.replace(/</g,'&lt;'),'u');const ty=document.createElement('div');ty.className='m b typing';ty.style.opacity=1;ty.innerHTML='<i></i><i></i><i></i>';msgs.appendChild(ty);msgs.scrollTop=msgs.scrollHeight;
+    setTimeout(()=>{ty.remove();const r=reply(t);if(r)add(r.a+(r.w?'<br><a href="'+wa(r.w)+'" target="_blank" rel="noopener">Continuar no WhatsApp →</a>':''),'b');
+      else add('Essa a própria Soraya responde melhor! <a href="'+wa('Olá, Soraya! Vim pelo site e tenho uma dúvida: '+t)+'" target="_blank" rel="noopener">Enviar no WhatsApp →</a>','b')},700)}
+  KB.slice(0,8).forEach(e=>{const b=document.createElement('button');b.type='button';b.textContent=e.q;b.onclick=()=>ask(e.q);qk.appendChild(b)});
+  let hi=false;function toggle(o){as.hidden=!o;ab.setAttribute('aria-expanded',o);if(o&&!hi){hi=true;add('Olá! 🌙 Sou a assistente virtual da <b>Soraya Alves</b>, fisioterapeuta do sono e cardiorrespiratória. Como posso te ajudar?','b')}if(o&&fine)document.getElementById('asI').focus()}
+  ab.onclick=()=>toggle(as.hidden);document.getElementById('asX').onclick=()=>toggle(false);addEventListener('keydown',e=>{if(e.key==='Escape')toggle(false)});
+  document.getElementById('asF').onsubmit=e=>{e.preventDefault();const i=document.getElementById('asI');if(i.value.trim()){ask(i.value.trim());i.value=''}}})();
+</script>
+</body>
+</html>
